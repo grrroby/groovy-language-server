@@ -1,9 +1,10 @@
 name: Release
 
 on:
-  push:
-    branches: [master]
-
+  release:
+    types: [published]
+  workflow_dispatch: # Add this line here!
+  
 jobs:
   build:
     strategy:
